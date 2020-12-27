@@ -9,10 +9,10 @@ void Pramesift(unsigned int nMax)
 	for (int i = 2; i < nArrLen; i++)
 	{
 		if(pArr[i]) continue;
-		pArr[++pArr[0]] = i;
+		pArr[++pArr[0]] = i;	//记录质数
 		for (unsigned int j = i * 2; j < nArrLen; j += i)
 		{
-			pArr[j] = 1;
+			pArr[j] = 1; //标记合数
 		}
 	}
 #if 0

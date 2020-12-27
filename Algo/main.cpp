@@ -12,6 +12,8 @@
 #include "VzTimeUtils.h"
 #include "sort.hpp"
 #include "prime.hpp"
+#include "euler.hpp"
+#include "bigdigit.hpp"
 
 
 void SortArr()
@@ -76,8 +78,13 @@ void Prime()
 
 int main()
 {
-	SortArr();
+	CVzTimeUtils oTimeUtils;
+	oTimeUtils.Update();
+	//SortArr();
 	//Prime();
+	EulerTest();
+	//BigdigitTest();
+	std::cout << std::endl << "run:" << oTimeUtils.GetElapsedTimeInMilliSec() << "ms";
 	getchar();
 	return 0;
 }
