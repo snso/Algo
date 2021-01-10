@@ -3,10 +3,10 @@
 
 void Pramesift(unsigned int nMax)
 {
-	int nArrLen = nMax + 1;
+	unsigned int nArrLen = nMax + 1;
 	int* pArr = new int[nArrLen];
 	memset(pArr, 0 , sizeof(int) * nArrLen);
-	for (int i = 2; i < nArrLen; i++)
+	for (unsigned int i = 2; i < nArrLen; i++)
 	{
 		if(pArr[i]) continue;
 		pArr[++pArr[0]] = i;	//¼ÇÂ¼ÖÊÊý

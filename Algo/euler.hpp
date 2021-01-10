@@ -117,10 +117,10 @@ unsigned int Euler_6_SumQuare(int nNum)
 
 unsigned int Euler_7_PrimeNum(int nIndex)
 {
-	int nNum = nIndex * 20;
+	unsigned int nNum = nIndex * 20;
 	unsigned int* pArr = new unsigned int[nNum + 1];
 	memset(pArr, 0, sizeof(unsigned int) * (nNum + 1));
-	for (int i = 2; i <= nNum; i++)
+	for (unsigned int i = 2; i <= nNum; i++)
 	{
 		if(pArr[i]) continue;
 		pArr[++pArr[0]] = i;
@@ -206,7 +206,7 @@ unsigned long long Euler_11_MaxProductInGrid(const int pArr[][30], const int nRo
 
 
 int* pArrData = nullptr;
-int nLen = 0;
+long long nLen = 0;
 
 int CollztzLen(long long nNum)
 {
